@@ -1,0 +1,139 @@
+/* Variables */
+:root {
+  --primary-color: #7d3aa1;
+  --gray-color: #cccecf;
+  --dark-gray-color: #707070;
+  --max-width: 1400px;
+}
+
+/* Container */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding-top: 35px;
+}
+
+/* Hamburger Menu */
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.menu-btn .burger {
+  width: 30px;
+  height: 3px;
+  background: #fff;
+}
+
+.menu-btn .burger::before,
+.menu-btn .burger::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+}
+
+.menu-btn .burger::before {
+  transform: translateY(-9px);
+}
+
+.menu-btn .burger::after {
+  transform: translateY(9px);
+}
+
+/* Paragraph */
+.lead {
+  font-size: 3rem;
+}
+
+.small {
+  font-size: 14px;
+  color: var(--gray-color);
+}
+
+.medium {
+  font-size: 18px;
+  color: var(--gray-color);
+}
+
+.gray-heading {
+  color: #606060;
+  font-size: 26px;
+}
+
+.l-heading {
+  color: #303030;
+  font-size: 50px;
+}
+
+.purple {
+  filter: invert(26%) sepia(31%) saturate(2617%) hue-rotate(251deg) brightness(100%) contrast(92%);
+}
+
+.gray {
+  filter: invert(92%) sepia(0%) saturate(0%) hue-rotate(138deg) brightness(93%) contrast(106%);
+
+}
+
+.bottom-line {
+  height: 2px;
+  width: 100%;
+  background: #f1f1f1;
+}
+
+/* Dot */
+.dotted-wrap {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.dotted-wrap .dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.dotted-wrap .dot::before,
+.dotted-wrap .dot::after {
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.dotted-wrap .dot::before {
+  transform: translateX(-30px);
+}
+
+.dotted-wrap .dot::after {
+  transform: translateX(30px);
+}
+
+.btn {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
